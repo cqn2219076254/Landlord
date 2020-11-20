@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\MACHENIKE\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\MACHENIKE\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Game.-951275187.00" t="ExcludeRecursive" />
+    <e p="D:\学习\CS\面向对象\Project\Unity3D网络游戏实战（第二版）\Unity3D网络游戏实战（第二版）\Chapter10\Client\Game" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Script" t="Include">
+          <e p="BaseTank.cs" t="Include" />
+          <e p="Bullet.cs" t="Include" />
+          <e p="CameraFollow.cs" t="Include" />
+          <e p="CtrlTank.cs" t="Include" />
+          <e p="framework" t="Include">
+            <e p="BasePanel.cs" t="Include" />
+            <e p="ByteArray.cs" t="Include" />
+            <e p="MsgBase.cs" t="Include" />
+            <e p="NetManager.cs" t="Include" />
+            <e p="PanelManager.cs" t="Include" />
+            <e p="ResManager.cs" t="Include" />
+          </e>
+          <e p="GameMain.cs" t="Include" />
+          <e p="mudule" t="Include">
+            <e p="Common" t="Include">
+              <e p="SillyPanel.cs" t="Include" />
+              <e p="TipPanel.cs" t="Include" />
+            </e>
+            <e p="Login" t="Include">
+              <e p="LoginPanel.cs" t="Include" />
+              <e p="RegisterPanel.cs" t="Include" />
+            </e>
+            <e p="Room" t="Include">
+              <e p="RoomListPanel.cs" t="Include" />
+              <e p="RoomPanel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="proto" t="Include">
+            <e p="BattleMsg.cs" t="Include" />
+            <e p="LoginMsg.cs" t="Include" />
+            <e p="NotepadMsg.cs" t="Include" />
+            <e p="RoomMsg.cs" t="Include" />
+            <e p="SysMsg.cs" t="Include" />
+          </e>
+        </e>
+        <e p="testJsonArray.cs" t="Include" />
+      </e>
+      <e p="Game.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

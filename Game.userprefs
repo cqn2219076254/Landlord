@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\mudule\Room\RoomPanel.cs">
+    <Files>
+      <File FileName="Assets\Script\BaseTank.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\CtrlTank.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\framework\PanelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\framework\BasePanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\framework\NetManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\proto\LoginMsg.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\mudule\Common\TipPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\mudule\Login\LoginPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\CameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\mudule\Room\RoomListPanel.cs" Line="95" Column="41" />
+      <File FileName="Assets\Script\proto\RoomMsg.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\mudule\Room\RoomPanel.cs" Line="74" Column="41" />
+      <File FileName="Assets\testJsonArray.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\framework\MsgBase.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\proto\NotepadMsg.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\GameMain.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 592640c5a8fcdfd4ab2444b7ff4f7305
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - MF JingHei (Noncommercial)
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e4d5a9d5c4a258d4b8d24d7f3d14855e, type: 3}
+  - {fileID: 12800000, guid: 53f0bf88825bb0d4ea152fe61f411af6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
