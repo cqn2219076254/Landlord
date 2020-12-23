@@ -1,38 +1,32 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using static Const;
 
 public class Game2PlayCard : MonoBehaviour
 {
     CardType cst;
-    List<Card> pickcard;
+    List<Game2Card> pickcard;
 
     public void FirstJudge()
     {
-        pickcard = this.GetComponent<Player>().pickedlist;
+        pickcard = this.GetComponent<Game2Player>().pickedlist;
         Debug.Log(pickcard);
         pickcard.Sort(
-            (Card a, Card b) =>
+            (Game2Card a, Game2Card b) =>
             {
                 return -a.sortOrder.CompareTo(b.sortOrder);
 
             });
         Game2PlayCardUI PCUI = this.GetComponent<Game2PlayCardUI>();
         PCUI.able(pickcard);
-        if (Ruler.CanPop(pickcard, out cst))
+        if (Game2Ruler.CanPop(pickcard, out cst))
         {
             int length = pickcard.Count;
             int weight = pickcard[length / 2].value;
             //DeskControl dsk = this.gameObject.GetComponentInParent<DeskControl>();
             if (SecondJudge(cst, weight, length))
             {
-                List<Card> hadc = this.GetComponent<Player>().CardList;
+                List<Game2Card> hadc = this.GetComponent<Game2Player>().CardList;
                 for (int i = 0; i < pickcard.Count; i++)
                 {
                     hadc.Remove(pickcard[i]);

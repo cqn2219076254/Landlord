@@ -35,30 +35,44 @@ public class LordUI : MonoBehaviour
     }
     void callLord(GameObject call)
     {
+        GameObject.Find("Root/Canvas/multi(Clone)/board/Desk").GetComponentInParent<Sound>().PlayEffect(Const.CallLord);
+        Debug.Log("click succ");
         this.gameObject.GetComponentInParent<LordModel>().callL();
-        Message message = new Message();
-        message.lordChoice = 1;
-        message.lord = true;
+        MsgGrabMsg msg = new MsgGrabMsg();
+        msg.roomId = NetManager.GetPlayer().roomId;
+        msg.lord = true;
+        msg.lordChoice = 1;
+        NetManager.Send(msg);
     }
     void notCallLord(GameObject call)
     {
         this.gameObject.GetComponentInParent<LordModel>().notCallL();
-        Message message = new Message();
-        message.lordChoice = 2;
-        message.lord = true;
+        MsgGrabMsg msg = new MsgGrabMsg();
+        msg.roomId = NetManager.GetPlayer().roomId;
+        msg.lord = true;
+        msg.lordChoice = 2;
+        NetManager.Send(msg);
+        Debug.Log("send msg succ");
+        Debug.Log(msg.lord);
     }
     void grabLord(GameObject grab)
     {
+        GameObject.Find("Root/Canvas/multi(Clone)/board/Desk").GetComponentInParent<Sound>().PlayEffect(Const.Grab);
         this.gameObject.GetComponentInParent<LordModel>().grabL();
-        Message message = new Message();
-        message.lordChoice = 3;
-        message.lord = true;
+        MsgGrabMsg msg = new MsgGrabMsg();
+        msg.roomId = NetManager.GetPlayer().roomId;
+        msg.lordChoice = 3;
+        msg.lord = true;
+        NetManager.Send(msg);
     }
     void notGrabLord(GameObject notGrab)
     {
+        GameObject.Find("Root/Canvas/multi(Clone)/board/Desk").GetComponentInParent<Sound>().PlayEffect(Const.DisGrab);
         this.gameObject.GetComponentInParent<LordModel>().notGrabL();
-        Message message = new Message();
-        message.lordChoice = 4;
-        message.lord = true;
+        MsgGrabMsg msg = new MsgGrabMsg();
+        msg.roomId = NetManager.GetPlayer().roomId;
+        msg.lord = true;
+        msg.lordChoice = 4;
+        NetManager.Send(msg);
     }
 }

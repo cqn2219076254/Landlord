@@ -20,7 +20,7 @@ public class PlayCard:MonoBehaviour
     CardType cst;
     //缺乏构造器，需要和Player,DeskControl双向绑定
 
-    public void FirstJudge()
+    public bool FirstJudge()
     {
         List<Card> pickcard = this.GetComponent<Player>().pickedlist;
         pickcard.Sort(
@@ -38,6 +38,7 @@ public class PlayCard:MonoBehaviour
             DeskControl dsk = this.gameObject.GetComponentInParent<DeskControl>();
             if (dsk.SecondJudge(cst,weight,length))
             {
+                this.gameObject.GetComponentInParent<Sound>().PlayCardEffect(cst, weight );
                 List<Card> hadc = this.GetComponent<Player>().CardList;
                 for(int i = 0; i < pickcard.Count; i++)
                 {
@@ -47,11 +48,13 @@ public class PlayCard:MonoBehaviour
                 this.gameObject.GetComponentInParent<DeskUI>().OutCard(pickcard,hadc);
                 //调用changestatus
                 //使用deskui把牌打出去
+                return true;
             }
             else
             {
                 //使用deskui给错误提示
                 Debug.Log("Invalid cast.");
+                return false;
             }
         }
         else
@@ -59,6 +62,7 @@ public class PlayCard:MonoBehaviour
             //deskui错误提示
             Debug.Log("Invalid cast 2.");
             //PCUI.unable();
+            return false;
         }
         //Ruler.CanPop  使用host.pickedlist生成CardType
         // if 通过测试

@@ -12,6 +12,14 @@ public class LordModel : MonoBehaviour
     public bool[] lord = new bool[3];
     public Player currentChoice;
     public Player currentLord;
+    public void initL(int i)
+    {
+        lordInit = i;
+        players = this.GetComponentsInChildren<Player>().ToList<Player>();
+        initCall = players[lordInit];
+        currentChoice = players[lordInit];
+    }
+
     public void Awake()
     {
         lordInit = 0;
@@ -39,15 +47,15 @@ public class LordModel : MonoBehaviour
         currentChoice.GetComponent<LordUI>().call.SetActive(false);
         if (edited[0] && edited[1] && edited[2] && (!lord[0]) && (!lord[1]) && (!lord[2]))
         {
-            lordInit = Random.Range(0, 3);
-            initCall = players[lordInit];
-            currentChoice = players[lordInit];
+            // lordInit = Random.Range(0, 3);
+            // initCall = players[lordInit];
+            // currentChoice = players[lordInit];
             edited[0] = false;
             edited[1] = false;
             edited[2] = false;
-            this.transform.parent.Find("CardInitiate(Clone)").GetComponent<Cardinit>().selfDestroy();
-            GameObject g = Instantiate(Resources.Load<GameObject>("CardInitiate"));
-            g.transform.parent = this.transform.parent;
+            // this.transform.parent.Find("CardInitiate(Clone)").GetComponent<Cardinit>().selfDestroy();
+            // GameObject g = Instantiate(Resources.Load<GameObject>("CardInitiate"));
+            // g.transform.parent = this.transform.parent;
         }
         else
         {
@@ -105,7 +113,9 @@ public class LordModel : MonoBehaviour
             {
                 initCall.GetComponent<PlayCardUI>().pop.SetActive(true);
                 initCall.GetComponent<PlayCardUI>().notPop.SetActive(true);
+                initCall.GetComponent<PlayCardUI>().prompt.SetActive(true);
             }
+            initCall.transform.Find("Image").gameObject.SetActive(true);
         }
     }
     public void notGrabL()
@@ -124,7 +134,9 @@ public class LordModel : MonoBehaviour
             {
                 currentLord.GetComponent<PlayCardUI>().pop.SetActive(true);
                 currentLord.GetComponent<PlayCardUI>().notPop.SetActive(true);
+                currentLord.GetComponent<PlayCardUI>().prompt.SetActive(true);
             }
+            currentLord.transform.Find("Image").gameObject.SetActive(true);
         }
         else
         {
@@ -138,7 +150,9 @@ public class LordModel : MonoBehaviour
                 {
                     currentLord.GetComponent<PlayCardUI>().pop.SetActive(true);
                     currentLord.GetComponent<PlayCardUI>().notPop.SetActive(true);
+                    currentLord.GetComponent<PlayCardUI>().prompt.SetActive(true);
                 }
+                currentLord.transform.Find("Image").gameObject.SetActive(true);
             }
             else
             {
@@ -172,7 +186,9 @@ public class LordModel : MonoBehaviour
             {
                 initCall.GetComponent<PlayCardUI>().pop.SetActive(true);
                 initCall.GetComponent<PlayCardUI>().notPop.SetActive(true);
+                initCall.GetComponent<PlayCardUI>().prompt.SetActive(true);
             }
+            initCall.transform.Find("Image").gameObject.SetActive(true);
         }
         else
         {

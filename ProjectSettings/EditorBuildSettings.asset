@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/battle.unity
     guid: aa8c97dc133e2164392fc631626009d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/CheckPoint1.unity
     guid: b566dc146ce5e6f4fa227d8074a29bbd
   m_configObjects: {}

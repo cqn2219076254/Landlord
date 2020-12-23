@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class SettlementPanel4 : BasePanel
 {
 	//提示文本
-	private Text Name;
-	private Text Score;
-	private Text Rate;
-	private Text Final;
+	private static Text Name;
+	private static Text Score;
+	private static Text Rate;
+	private static Text Final;
 	//确定按钮
 	private Button Continue;
 	private Button GoBack;
@@ -34,11 +34,14 @@ public class SettlementPanel4 : BasePanel
 		Continue.onClick.AddListener(OnConClick);
 		GoBack.onClick.AddListener(OnBackClick);
 		//文字显示
-		Name.text = (string)args[0];
-		Score.text = (string)args[1];
-		Rate.text = (string)args[2];
-		Final.text = (string)args[3];
+		// Name.text = (string)args[0];
+		// Score.text = (string)args[1];
+		// Rate.text = (string)args[2];
+		// Final.text = (string)args[3];
 
+		MsgBean msgBean = new MsgBean();
+		msgBean.beanNum = -400;
+		NetManager.Send(msgBean);
 	}
 
 	//关闭
@@ -50,12 +53,21 @@ public class SettlementPanel4 : BasePanel
 	//按下按钮
 	public void OnBackClick()
 	{
-		PanelManager.Open<HomePanel>();
+		PanelManager.Open<Load1Panel>();
 		Close();
 	}
 
 	public void OnConClick()
 	{
+		GameObject g = Instantiate(Resources.Load<GameObject>("multi"));
+		g.transform.SetParent(GameObject.Find("Root/Canvas").transform);
+		g.transform.localScale = new Vector3(1, 1, 1);
+		g.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(-679, 186, 0);
+		
+
+		// enter room
+		MsgEnterRoom msgEnterRoom = new MsgEnterRoom();
+		NetManager.Send(msgEnterRoom);
 		Close();
 	}
 }

@@ -6,19 +6,21 @@ using UnityEngine.UI;
 
 public class MapPanel : BasePanel
 {
-    public Button cp1_0;
-    public Button cp2_0;
-    public Button cp3_0;
-    public Button cp4_0;
-    public Button cp1_1;
-    public Button cp2_1;
-    public Button cp3_1;
-    public Button cp4_1;
-    public Button cp1_2;
-    public Button cp2_2;
-    public Button cp3_2;
-    public Button cp4_2;
+    public static Button cp1_0;
+    public static Button cp2_0;
+    public static Button cp3_0;
+    public static Button cp4_0;
+    public static Button cp1_1;
+    public static Button cp2_1;
+    public static Button cp3_1;
+    public static Button cp4_1;
+    public static Button cp1_2;
+    public static Button cp2_2;
+    public static Button cp3_2;
+    public static Button cp4_2;
     public Button gobackhome;
+
+    private int cpNum = 0;
 
     //初始化
     public override void OnInit()
@@ -58,11 +60,14 @@ public class MapPanel : BasePanel
         cp1_2.onClick.AddListener(OnGreyClick);
         cp2_2.onClick.AddListener(OnGreyClick);
         cp3_2.onClick.AddListener(OnGreyClick);
-        cp4_2.onClick.AddListener(OnGreyClick); 
+        cp4_2.onClick.AddListener(OnGreyClick);
+        
+        // 发送查询
+        MsgGetPlayerInfo msgGetPlayerInfo = new MsgGetPlayerInfo();
+        NetManager.Send(msgGetPlayerInfo);
+        // 协议监听
+        NetManager.AddMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
 
-        ShowButton((int)args[0]);
-        //网络协议监听
-        //NetManager.AddMsgListener("MsgLogin", OnMsgLogin);
     }
 
     public void ShowButton(int num)
@@ -112,54 +117,43 @@ public class MapPanel : BasePanel
     public void OnBackClick()
     {
         PanelManager.Open<HomePanel>();
+        NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
         Close();
     }
 
     public void OnCheck1Click()
     {
-        GameObject CP1 = Instantiate(Resources.Load<GameObject>("CP1"));
-        CP1.transform.SetParent(GameObject.Find("Root/Canvas").transform);
-        CP1.transform.localScale = new Vector3(1, 1, 1);
-        CP1.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(-512, (float)133.6, 0);
-        GameObject.Find("Root/Canvas/CP1(Clone)/desk").GetComponent<Game2RoundModel>().CPnum = 1;
-        GameObject CardDeal = Instantiate(Resources.Load<GameObject>("CP1CardDealing"));
-        CardDeal.transform.SetParent(GameObject.Find("Root/Canvas/CP1(Clone)").transform);
+        PanelManager.Open<Load3Panel>(1);
+        NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
         Close();
     }
 
     public void OnCheck2Click()
     {
-        GameObject CP2 = Instantiate(Resources.Load<GameObject>("CP2"));
-        CP2.transform.SetParent(GameObject.Find("Root/Canvas").transform);
-        CP2.transform.localScale = new Vector3(1, 1, 1);
-        CP2.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(-512, (float)133.6, 0);
-        GameObject.Find("Root/Canvas/CP2(Clone)/desk").GetComponent<Game2RoundModel>().CPnum = 2;
-        GameObject CardDeal = Instantiate(Resources.Load<GameObject>("CP2CardDealing"));
-        CardDeal.transform.SetParent(GameObject.Find("Root/Canvas/CP2(Clone)").transform);
+        PanelManager.Open<Load3Panel>(2);
+        NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
         Close();
     }
 
     public void OnCheck3Click()
     {
-        GameObject CP3 = Instantiate(Resources.Load<GameObject>("CP3"));
-        CP3.transform.SetParent(GameObject.Find("Root/Canvas").transform);
-        CP3.transform.localScale = new Vector3(1, 1, 1);
-        CP3.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(-512, (float)133.6, 0);
-        GameObject.Find("Root/Canvas/CP3(Clone)/desk").GetComponent<Game2RoundModel>().CPnum = 3;
-        GameObject CardDeal = Instantiate(Resources.Load<GameObject>("CP3CardDealing"));
-        CardDeal.transform.SetParent(GameObject.Find("Root/Canvas/CP3(Clone)").transform);
+        PanelManager.Open<Load3Panel>(3);
+        NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
         Close();
     }
 
     public void OnCheck4Click()
     {
-        GameObject CP4 = Instantiate(Resources.Load<GameObject>("CP4"));
-        CP4.transform.SetParent(GameObject.Find("Root/Canvas").transform);
-        CP4.transform.localScale = new Vector3(1, 1, 1);
-        CP4.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(-512, (float)133.6, 0);
-        GameObject.Find("Root/Canvas/CP4(Clone)/desk").GetComponent<Game2RoundModel>().CPnum = 4;
-        GameObject CardDeal = Instantiate(Resources.Load<GameObject>("CP4CardDealing"));
-        CardDeal.transform.SetParent(GameObject.Find("Root/Canvas/CP4(Clone)").transform);
+        PanelManager.Open<Load3Panel>(4);
+        NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
         Close();
+    }
+
+    public void OnGetPlayerInfo(MsgBase msgBase)
+    {
+        MsgGetPlayerInfo msg = (MsgGetPlayerInfo)msgBase;
+        cpNum = msg.cpNum;
+        Debug.Log(cpNum);
+        ShowButton(cpNum);
     }
 }

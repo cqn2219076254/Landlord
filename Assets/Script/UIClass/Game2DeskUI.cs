@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Game2DeskUI : MonoBehaviour
 {
     public GameObject player;
     public GameObject computer;
-    public List<Card> displayCard = new List<Card>();
+    public List<Game2Card> displayCard = new List<Game2Card>();
 
-    public void showMyCard(List<Card> cards)
+    public void showMyCard(List<Game2Card> cards)
     {
         this.clearDesk();
         Vector3 z = new Vector3(0, 0, 0);
@@ -25,10 +24,10 @@ public class Game2DeskUI : MonoBehaviour
         cards.Clear();
     }
 
-    public void updateHasCard(List<Card> hadCards)
+    public void updateHasCard(List<Game2Card> hadCards)
     {
         Game2RoundModel round = this.GetComponent<Game2RoundModel>();
-        if(round.CurrentCharacter == player.GetComponent<Player>())
+        if(round.CurrentCharacter == player.GetComponent<Game2Player>())
         {
             Vector3 zs = new Vector3((float)(-0.5 * (hadCards.Count - 1) / 2.0), (float)-4.5, 0);
             Vector3 f = new Vector3((float)0.5, 0, 0);

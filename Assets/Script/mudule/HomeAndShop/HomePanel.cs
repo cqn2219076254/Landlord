@@ -9,10 +9,11 @@ public class HomePanel : BasePanel
 	public Button multiplayer;
 	public Button challenge;
 	public Button shop;
-	public Text beanNum;
-	public Text diamondNum;
+	public static Text beanNum;
+	public static Text diamondNum;
 
-	private int cpNum = 0;
+	private string bn;
+	private string dn;
 	//初始化
 	public override void OnInit()
 	{
@@ -29,15 +30,17 @@ public class HomePanel : BasePanel
 		shop = skin.transform.Find("Shop").GetComponent<Button>();
 		beanNum = skin.transform.Find("beannum").GetComponent<Text>();
 		diamondNum = skin.transform.Find("diamondnum").GetComponent<Text>();
+
 		//监听
 		multiplayer.onClick.AddListener(OnMultiClick);
 		challenge.onClick.AddListener(OnChallengeClick);
 		shop.onClick.AddListener(OnShopClick);
-		// 协议监听
-		NetManager.AddMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
+
 		// 发送查询
 		MsgGetPlayerInfo msgGetPlayerInfo = new MsgGetPlayerInfo();
 		NetManager.Send(msgGetPlayerInfo);
+		// 协议监听
+		NetManager.AddMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
 	}
 
 	//关闭
@@ -49,13 +52,15 @@ public class HomePanel : BasePanel
 	//当按下开始按钮
 	public void OnMultiClick()
 	{
-		//PanelManager.Open<RoomListPanel>();
+		PanelManager.Open<GameTypePanel>();
+		NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
 		Close();
 	}
 
 	public void OnChallengeClick()
 	{
-		PanelManager.Open<MapPanel>(cpNum);
+		PanelManager.Open<MapPanel>();
+		NetManager.RemoveMsgListener("MsgGetPlayerInfo", OnGetPlayerInfo);
 		Close();
 	}
 
@@ -70,8 +75,7 @@ public class HomePanel : BasePanel
 		MsgGetPlayerInfo msg = (MsgGetPlayerInfo)msgBase;
 		beanNum.text = msg.bean.ToString();
 		diamondNum.text = msg.diamond.ToString();
-		cpNum = msg.cpNum;
-		Debug.Log("scuu46");
-		Debug.Log(msg.bean.ToString());
+		Debug.Log(beanNum.text);
+		Debug.Log(diamondNum.text);
 	}
 }

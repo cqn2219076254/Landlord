@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using static Const;
 using System.Collections;
 
@@ -14,29 +8,40 @@ using System.Collections;
 /// </summary>
 public class Game2RoundModel : MonoBehaviour
 {
-    public Player player;
-    public Player computer;
+    public Game2Player player;
+    public Game2Player computer;
 
     public bool isWin = false;
     public int CPnum = 0;
     public int CurrentWeight = -1;//最大出牌人的出牌大小
     public int CurrentLength = -1;// 出牌长度
     public CardType CurrentType = CardType.None;// 出牌类型
-    public Player BiggestCharacter = null;// 最大出牌者
-    public Player CurrentCharacter = null;// 现在该谁出牌
+    public Game2Player BiggestCharacter = null;// 最大出牌者
+    public Game2Player CurrentCharacter = null;// 现在该谁出牌
+    
+    private AudioSource NotPop1;
+    private AudioSource Pop1;
 
     public void Start()
     {
-        player = this.GetComponentsInChildren<Player>()[0];
-        computer = this.GetComponentsInChildren<Player>()[1];
+        player = this.GetComponentsInChildren<Game2Player>()[0];
+        computer = this.GetComponentsInChildren<Game2Player>()[1];
     }
 
     public void Turn()
     {
         Debug.Log("turn");
-        //玩家轮换，更改状态
         Debug.Log(CurrentCharacter);
         Debug.Log(BiggestCharacter);
+        if (CurrentCharacter == player)
+        {
+            Pop1 = gameObject.AddComponent<AudioSource>();
+            AudioClip clip = Resources.Load<AudioClip>("Sound/CPSound/pop1");
+            Pop1.volume = 10;
+            Pop1.clip = clip;
+            Pop1.Play();
+        }
+        
         if (CurrentCharacter.CardList.Count == 0)
         {
             if(CurrentCharacter == player)
@@ -66,9 +71,6 @@ public class Game2RoundModel : MonoBehaviour
                     case 4:
                         this.GetComponentsInChildren<CP4AI>()[0].Action();
                         break;
-                    //case 5:
-                    //    this.GetComponentsInChildren<CP5AI>()[0].Action();
-                    //    break;
                 }
             }
 
@@ -84,6 +86,15 @@ public class Game2RoundModel : MonoBehaviour
     public void NotPop()
     {
         Debug.Log("NotPop");
+        if (CurrentCharacter == player)
+        {
+            NotPop1 = gameObject.AddComponent<AudioSource>();
+            AudioClip clip = Resources.Load<AudioClip>("Sound/CPSound/notpop1");
+            NotPop1.volume = 10;
+            NotPop1.clip = clip;
+            NotPop1.Play();
+        }
+
         CurrentLength = -1;
         CurrentWeight = -1;
         CurrentType = CardType.None;
@@ -107,9 +118,6 @@ public class Game2RoundModel : MonoBehaviour
                 case 4:
                     this.GetComponentsInChildren<CP4AI>()[0].Action();
                     break;
-                //case 5:
-                //    this.GetComponentsInChildren<CP5AI>()[0].Action();
-                //    break;
             }
         }
         else{
@@ -136,16 +144,21 @@ public class Game2RoundModel : MonoBehaviour
             case 4:
                 GameObject.Find("Root/Canvas/CP4(Clone)/CP4CardDealing(Clone)").GetComponent<CP4CardDeal>().selfDestroy();
                 break;
-            //case 5:
-            //    GameObject.Find("Root/Canvas/CP5(Clone)/CP5CardDealing(Clone)").GetComponent<CP5CardDeal>().selfDestroy();
-            //    break;
         }
         if (isWin)
         {
+            MsgCPNum msgCPNum = new MsgCPNum();
+            msgCPNum.CPNum = CPnum;
+            msgCPNum.diamond = 100;
+            NetManager.Send(msgCPNum);
+
             PanelManager.Open<Result1Panel>();
         }
         else
         {
+            MsgCPNum msgCPNum = new MsgCPNum();
+            NetManager.Send(msgCPNum);
+
             PanelManager.Open<Result2Panel>();
         }
     }

@@ -7,6 +7,8 @@ public class Result2Panel : BasePanel
 {
 	public Button back1;
 	public Button back2;
+	
+	private AudioSource Defeat1;
 
 	//初始化
 	public override void OnInit()
@@ -24,6 +26,12 @@ public class Result2Panel : BasePanel
 		//监听
 		back1.onClick.AddListener(OnBackClick);
 		back2.onClick.AddListener(OnBackClick);
+		
+		Defeat1 = gameObject.AddComponent<AudioSource>();
+		AudioClip clip = Resources.Load<AudioClip>("Sound/CPSound/defeat1");
+		Defeat1.volume = 10;
+		Defeat1.clip = clip;
+		Defeat1.Play();
 	}
 
 	//关闭
@@ -34,12 +42,11 @@ public class Result2Panel : BasePanel
 
 	public void OnBackClick()
 	{
-		PanelManager.Open<MapPanel>(0);
+		PanelManager.Open<MapPanel>();
 		DestroyImmediate(GameObject.Find("Root/Canvas/CP1(Clone)"));
 		DestroyImmediate(GameObject.Find("Root/Canvas/CP2(Clone)"));
 		DestroyImmediate(GameObject.Find("Root/Canvas/CP3(Clone)"));
 		DestroyImmediate(GameObject.Find("Root/Canvas/CP4(Clone)"));
-		DestroyImmediate(GameObject.Find("Root/Canvas/CP5(Clone)"));
 		Close();
 	}
 }

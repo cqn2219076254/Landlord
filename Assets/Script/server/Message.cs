@@ -10,14 +10,16 @@ public class Message
     public int lordChoice =-1;//
     public int popChoice = -1;//
 
-    public Player LandLord = null;
+    // public Player LandLord = null;
     public string[] dealcard;
-    public List<Card> showcard = new List<Card>();
+    // public List<Card> showcard = new List<Card>();
+    public string[] showcard;
     public int currentWeight = -1;
     public int currentLength = -1;
-    public CardType currentType = CardType.None;
-    public Player biggestCharacter = null;
-    public Player currentCharacter = null;
+    // public CardType currentType = CardType.None;
+    public string currentType = "None";
+    // public Player biggestCharacter = null;
+    // public Player currentCharacter = null;
     public Message()
     {
 

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Assets",
+    "\\Assets\\Script",
+    "\\Assets\\Script\\DataClass",
+    "\\Assets\\Script\\framework",
+    "\\Assets\\Script\\mudule",
+    "\\Assets\\Script\\mudule\\Login",
+    "\\Assets\\Script\\proto",
+    "\\Assets\\Script\\UIClass"
+  ],
+  "SelectedNode": "\\Assets\\Script\\mudule\\Login\\LoginPanel.cs",
+  "PreviewInSolutionExplorer": false
+}

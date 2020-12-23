@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Script.DataClass;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -52,11 +53,12 @@ public class LoginPanel : BasePanel
         msgLogin.pw = Password.text;
         NetManager.Send(msgLogin);
 
-        PanelManager.Close("BeginPanel");
-        PanelManager.Open<HomePanel>();
-        Close();
+        // PanelManager.Close("BeginPanel");
+        // PanelManager.Open<Load1Panel>();
+        // Close();
     }
 
+    //收到登陆协议
     //收到登陆协议
     public void OnMsgLogin(MsgBase msgBase)
     {
@@ -64,13 +66,11 @@ public class LoginPanel : BasePanel
         if (msg.result == 0)
         {
             Debug.Log("登陆成功");
-            //设置id
-            GameMain.id = msg.id;
-            //Success.gameObject.SetActive(true);
-            //StartCoroutine(Disappear(1));
+            //初始化player，id
+            NetManager.SetPlayer(new NewPlayer(msg.id));
             //打开房间列表界面
             PanelManager.Close("BeginPanel");
-            PanelManager.Open<HomePanel>();
+            PanelManager.Open<Load1Panel>();
             //关闭界面
             Close();
         }
@@ -79,5 +79,6 @@ public class LoginPanel : BasePanel
             PanelManager.Open<TipPanel>("账号或密码错误");
         }
     }
+
 
 }

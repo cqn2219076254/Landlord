@@ -407,8 +407,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8555948196343112171}
   - component: {fileID: 8555948196343112174}
-  - component: {fileID: 8555948196343112169}
   - component: {fileID: 8555948196343112168}
+  - component: {fileID: 4881248827118946261}
   m_Layer: 5
   m_Name: player
   m_TagString: Untagged
@@ -451,20 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notpop: {fileID: 8555948197789415336}
   pop: {fileID: 8555948197133025530}
---- !u!114 &8555948196343112169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8555948196343112170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75751e1dc886ed1408ef78daa8543dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  username: 
-  intergal: 0
 --- !u!114 &8555948196343112168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,6 +463,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf400c67758baa48ad37403a0dce417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4881248827118946261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8555948196343112170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0a9826fbdf51442bd2933ffb121a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  username: 
+  intergal: 0
 --- !u!1 &8555948196478954908
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8555948196478954909}
   - component: {fileID: 8555948196478954896}
-  - component: {fileID: 8555948196478954899}
+  - component: {fileID: 3885515152449974948}
   - component: {fileID: 8555948196478954898}
   - component: {fileID: 4302159655016288515}
   m_Layer: 5
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notpop: {fileID: 8295326938013883281}
   pop: {fileID: 5169596357989014436}
---- !u!114 &8555948196478954899
+--- !u!114 &3885515152449974948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8555948196478954908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75751e1dc886ed1408ef78daa8543dda, type: 3}
+  m_Script: {fileID: 11500000, guid: aa0a9826fbdf51442bd2933ffb121a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   username: 
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   CurrentLength: -1
   CurrentType: 0
   BiggestCharacter: {fileID: 0}
-  CurrentCharacter: {fileID: 8555948196343112169}
+  CurrentCharacter: {fileID: 4881248827118946261}
 --- !u!114 &8555948197605336009
 MonoBehaviour:
   m_ObjectHideFlags: 0

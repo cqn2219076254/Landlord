@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Net.Sockets;
 using System;
 using System.Linq;
+using Script.DataClass;
+
 public static class NetManager {
 	//定义套接字
 	static Socket socket;
@@ -13,6 +15,8 @@ public static class NetManager {
 	static Queue<ByteArray> writeQueue;
 	//是否正在连接
 	static bool isConnecting = false;
+	//已经连接
+	private static bool isConnected = false;
 	//是否正在关闭
 	static bool isClosing = false;
 	//消息列表
@@ -29,6 +33,8 @@ public static class NetManager {
 	static float lastPingTime = 0;
 	//上一次收到PONG的时间
 	static float lastPongTime = 0;
+	//当前玩家
+	private static NewPlayer currentPlayer;
 
 	//事件
 	public enum NetEvent
@@ -148,6 +154,7 @@ public static class NetManager {
 		try{
 			Socket socket = (Socket) ar.AsyncState;
 			socket.EndConnect(ar);
+			isConnected = true;
 			Debug.Log("Socket Connect Succ ");
 			FireEvent(NetEvent.ConnectSucc,"");
 			isConnecting = false;
@@ -378,5 +385,20 @@ public static class NetManager {
 	public static Boolean getConnecting()
 	{
 		return isConnecting;
+	}
+
+	public static Boolean getConnected()
+	{
+		return isConnected;
+	}
+
+	public static void SetPlayer(NewPlayer player)
+	{
+		currentPlayer = player;
+	}
+
+	public static NewPlayer GetPlayer()
+	{
+		return currentPlayer;
 	}
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
+﻿using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -30,7 +25,7 @@ public class Game2PlayCardUI : MonoBehaviour
         }
     }
 
-    public void able(List<Card> cards)
+    public void able(List<Game2Card> cards)
     {
         Debug.Log("execute");
         for (int i = 0; i < cards.Count; i++)

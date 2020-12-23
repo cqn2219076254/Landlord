@@ -51,15 +51,13 @@ public class BeginPanel : BasePanel
 	//当按下开始按钮
 	public void OnBeginClick()
 	{
-		NetManager.Connect("10.21.49.19", 8888);
-		if (NetManager.getConnecting() == true)
+		NetManager.Connect("10.20.173.82", 8888);
+		if (NetManager.getConnected())
 		{
 			title.gameObject.SetActive(false);
 			start.gameObject.SetActive(false);
 			PanelManager.Open<LoginPanel>();
 		}
-		//       title.gameObject.SetActive(false);
-		//       start.gameObject.SetActive(false);
-		// PanelManager.Open<LoginPanel>();
+		//PanelManager.Open<LoginPanel>();
 	}
 }

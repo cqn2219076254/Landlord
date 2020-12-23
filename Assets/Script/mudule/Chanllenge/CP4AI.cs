@@ -10,7 +10,7 @@ using System.Collections;
 public class CP4AI : MonoBehaviour
 {
     public bool done = false;
-    public List<Card> hadc = new List<Card>();
+    public List<Game2Card> hadc = new List<Game2Card>();
 
     public void Action()
     {
@@ -20,7 +20,7 @@ public class CP4AI : MonoBehaviour
     public void Do()
     {
         done = false;
-        hadc = this.gameObject.GetComponent<Player>().CardList;
+        hadc = this.gameObject.GetComponent<Game2Player>().CardList;
         int count = hadc.Count;
         Game2RoundModel round = this.gameObject.GetComponentInParent<Game2RoundModel>();
         if (round.CurrentType == CardType.Single)
@@ -126,7 +126,7 @@ public class CP4AI : MonoBehaviour
             if (hadc[i].value == n)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 this.GetComponent<Game2PlayCard>().FirstJudge();
                 if (count > hadc.Count)
                 {
@@ -144,7 +144,7 @@ public class CP4AI : MonoBehaviour
             if (hadc[i].value == n && ncount < 2)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 ncount++;
             }
         }
@@ -171,7 +171,7 @@ public class CP4AI : MonoBehaviour
             if (hadc[i].value == n && ncount < 3)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 ncount++;
             }
         }
@@ -198,13 +198,13 @@ public class CP4AI : MonoBehaviour
             if (hadc[i].value == m && mcount < 3)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 mcount++;
             }
             if (hadc[i].value == n && ncount < 1)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 ncount++;
             }
         }
@@ -231,13 +231,13 @@ public class CP4AI : MonoBehaviour
             if (hadc[i].value == m && mcount < 3)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 mcount++;
             }
             if (hadc[i].value == n && ncount < 2)
             {
                 hadc[i].picked = true;
-                this.gameObject.GetComponent<Player>().pickedlist.Add(hadc[i]);
+                this.gameObject.GetComponent<Game2Player>().pickedlist.Add(hadc[i]);
                 ncount++;
             }
         }

@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// 记得修改Pickedlist添加和消除
-/// </summary>
 public class CardUI : MonoBehaviour
 {
     public Card card;
@@ -12,6 +9,7 @@ public class CardUI : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            //GameObject.Find("Root/Canvas/multi(Clone)/board/Desk").GetComponentInParent<Sound>().PlayEffect(Const.Select);
             RaycastHit2D[] hits = Physics2D.RaycastAll(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             Debug.Log(hits);
             RaycastHit2D hit = hits[0];
@@ -29,50 +27,20 @@ public class CardUI : MonoBehaviour
             {
                 if (!UI.card.picked)
                 {
-                    UI.transform.position += (float)0.5*Vector3.up;
+                    UI.transform.position += (float) 0.5 * Vector3.up;
                     UI.card.picked = true;
                     host.pickedlist.Add(UI.card);
                 }
                 else
                 {
-                    UI.transform.position -= (float)0.5*Vector3.up;
-                    UI.card.picked = false;
-                    host.pickedlist.Remove(UI.card);
-                }
-            }
-            else if (UI.card.host.Equals("other1")) //这里需要添加card的host即Player的Pickedlist!!!!!!!!!!!!!
-            {
-                if (!UI.card.picked)
-                {
-                    UI.transform.position -= (float)0.5 * Vector3.right;
-                    UI.card.picked = true;
-                    host.pickedlist.Add(UI.card);
-                }
-                else
-                {
-                    UI.transform.position += (float)0.5 * Vector3.right;
+                    UI.transform.position -= (float) 0.5 * Vector3.up;
                     UI.card.picked = false;
                     host.pickedlist.Remove(UI.card);
                 }
             }
             else if (UI.card.host.Equals("computer"))
             {
-
-            }
-            else if (UI.card.host.Equals("other2"))
-            {
-                if (!UI.card.picked)
-                {
-                    UI.transform.position += (float)0.5 * Vector3.right;
-                    UI.card.picked = true;
-                    host.pickedlist.Add(UI.card);
-                }
-                else
-                {
-                    UI.transform.position -= (float)0.5 * Vector3.right;
-                    UI.card.picked = false;
-                    host.pickedlist.Remove(UI.card);
-                }
+                
             }
         }
     }

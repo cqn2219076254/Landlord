@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
+﻿using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -15,14 +10,7 @@ public class PlayCardUI : MonoBehaviour
 {
     public GameObject notPop;
     public GameObject pop;
-    //public PlayCard pycd;
-    /*private void Awake()
-    {
-        pycd = new PlayCard();
-        pycd.PCUI = this;
-        pycd.host = new Player();
-        pycd.host.popcard = pycd;
-    }*/
+    public GameObject prompt;
     private void Start()
     {
         //添加notpop
@@ -36,32 +24,132 @@ public class PlayCardUI : MonoBehaviour
         {
             notpop(notPop);
         });
+        Button btnnn = (Button)prompt.GetComponent<Button>();
+        btnnn.onClick.AddListener(delegate ()
+        {
+            hint(prompt);
+        });
+
     }
     void onClick(GameObject pop)
     {
-        this.GetComponent<PlayCard>().FirstJudge();
-        Message msg = new Message();
-        msg.pop = true;
-        msg.currentType = this.gameObject.GetComponentInParent<RoundModel>().CurrentType;
-        msg.currentLength = this.gameObject.GetComponentInParent<RoundModel>().CurrentLength;
-        msg.currentWeight = this.gameObject.GetComponentInParent<RoundModel>().CurrentWeight;
+        Debug.Log("current weight before pop:" + this.GetComponentInParent<RoundModel>().CurrentWeight);
+        bool send = this.GetComponent<PlayCard>().FirstJudge();
+        if (send)
+        {
+            MsgGrabMsg msgPop = new MsgGrabMsg();
+            msgPop.roomId = NetManager.GetPlayer().roomId;
+            msgPop.pop = true;
+            msgPop.popChoice = 1;
+            Const.CardType currentType = this.gameObject.GetComponentInParent<RoundModel>().CurrentType;
+            msgPop.currentLength = this.gameObject.GetComponentInParent<RoundModel>().CurrentLength;
+            msgPop.currentWeight = this.gameObject.GetComponentInParent<RoundModel>().CurrentWeight;
+            List<Card> deskui = this.GetComponentInParent<DeskUI>().displayCard;
+            string[] showcards = new string[deskui.Count * 2];
+            for (int i = 0; i < deskui.Count; i++)
+            {
+                showcards[2 * i] = deskui[i].value.ToString();
+                showcards[2 * i + 1] = deskui[i].color.ToString();
+            }
+            msgPop.showcard = showcards;
+            // 需要把 cardType里其他几种也实现，用switch好一点？
+            switch (currentType)
+            {
+                case Const.CardType.Single:
+                    msgPop.currentType = "Single";
+                    break;
+                case Const.CardType.Boom:
+                    msgPop.currentType = "Boom";
+                    break;
+                case Const.CardType.Double:
+                    msgPop.currentType = "Double";
+                    break;
+                case Const.CardType.None:
+                    msgPop.currentType = "None";
+                    break;
+                case Const.CardType.Straight:
+                    msgPop.currentType = "Straight";
+                    break;
+                case Const.CardType.Three:
+                    msgPop.currentType = "Three";
+                    break;
+                case Const.CardType.DoubleStraight:
+                    msgPop.currentType = "DoubleStraight";
+                    break;
+                case Const.CardType.JokerBoom:
+                    msgPop.currentType = "JokerBoom";
+                    break;
+                case Const.CardType.TripleStraight:
+                    msgPop.currentType = "TripleStraight";
+                    break;
+                case Const.CardType.ThreeAndOne:
+                    msgPop.currentType = "ThreeAndOne";
+                    break;
+                case Const.CardType.ThreeAndTwo:
+                    msgPop.currentType = "ThreeAndTwo";
+                    break;
+            }
+            NetManager.Send(msgPop);
+        }
     }
     void notpop(GameObject notpop)
     {
         if (this.gameObject.GetComponentInParent<RoundModel>().CurrentType != Const.CardType.None)
         {
             this.gameObject.GetComponentInParent<RoundModel>().Turn();
-            Message msg = new Message();
-            msg.pop = true;
-            msg.currentType = this.gameObject.GetComponentInParent<RoundModel>().CurrentType;
-            msg.currentLength = this.gameObject.GetComponentInParent<RoundModel>().CurrentLength;
-            msg.currentWeight = this.gameObject.GetComponentInParent<RoundModel>().CurrentWeight;
+            MsgGrabMsg msgPop = new MsgGrabMsg();
+            msgPop.roomId = NetManager.GetPlayer().roomId;
+            msgPop.pop = true;
+            //以为要改
+            Const.CardType currentType = this.gameObject.GetComponentInParent<RoundModel>().CurrentType;
+            msgPop.currentLength = this.gameObject.GetComponentInParent<RoundModel>().CurrentLength;
+            msgPop.currentWeight = this.gameObject.GetComponentInParent<RoundModel>().CurrentWeight;
+            switch (currentType)
+            {
+                case Const.CardType.Single:
+                    msgPop.currentType = "Single";
+                    break;
+                case Const.CardType.Boom:
+                    msgPop.currentType = "Boom";
+                    break;
+                case Const.CardType.Double:
+                    msgPop.currentType = "Double";
+                    break;
+                case Const.CardType.None:
+                    msgPop.currentType = "None";
+                    break;
+                case Const.CardType.Straight:
+                    msgPop.currentType = "Straight";
+                    break;
+                case Const.CardType.Three:
+                    msgPop.currentType = "Three";
+                    break;
+                case Const.CardType.DoubleStraight:
+                    msgPop.currentType = "DoubleStraight";
+                    break;
+                case Const.CardType.JokerBoom:
+                    msgPop.currentType = "JokerBoom";
+                    break;
+                case Const.CardType.TripleStraight:
+                    msgPop.currentType = "TripleStraight";
+                    break;
+                case Const.CardType.ThreeAndOne:
+                    msgPop.currentType = "ThreeAndOne";
+                    break;
+                case Const.CardType.ThreeAndTwo:
+                    msgPop.currentType = "ThreeAndTwo";
+                    break;
+            }
+            NetManager.Send(msgPop);
         }
     }
-    /*public void unable()
+    
+    void hint(GameObject prompt)
     {
-        Debug.Log("invalid cast");
-    }*/
+        RoundModel rm = this.transform.parent.GetComponent<RoundModel>();
+        this.GetComponent<Hint>().implement(rm);
+    }
+
     public void able(List<Card> cards)
     {
         Debug.Log("execute");

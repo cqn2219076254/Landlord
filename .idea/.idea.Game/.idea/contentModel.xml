@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\MACHENIKE\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\MACHENIKE\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Game.-951275187.00" t="ExcludeRecursive" />
-    <e p="D:\学习\CS\面向对象\Project\Unity3D网络游戏实战（第二版）\Unity3D网络游戏实战（第二版）\Chapter10\Client\Game" t="IncludeRecursive">
+    <e p="C:\Users\DELL\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\DELL\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Game.-1201407415.00" t="ExcludeRecursive" />
+    <e p="F:\斗地主project\test\test" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Res" t="Include">
+          <e p="head" t="Include">
+            <e p="url.txt" t="Include" />
+          </e>
+        </e>
         <e p="Script" t="Include">
-          <e p="BaseTank.cs" t="Include" />
-          <e p="Bullet.cs" t="Include" />
-          <e p="CameraFollow.cs" t="Include" />
-          <e p="CtrlTank.cs" t="Include" />
+          <e p="ControlClass" t="Include">
+            <e p="DeskControl.cs" t="Include" />
+            <e p="Game2Ruler.cs" t="Include" />
+            <e p="Hint.cs" t="Include" />
+            <e p="newCardF.cs" t="Include" />
+            <e p="newCards.cs" t="Include" />
+            <e p="Ruler.cs" t="Include" />
+            <e p="ServerInterface.cs" t="Include" />
+          </e>
+          <e p="DataClass" t="Include">
+            <e p="Card.cs" t="Include" />
+            <e p="Const.cs" t="Include" />
+            <e p="frm.cs" t="Include" />
+            <e p="Game2Card.cs" t="Include" />
+            <e p="Game2Player.cs" t="Include" />
+            <e p="Game2RoundModel.cs" t="Include" />
+            <e p="LordModel.cs" t="Include" />
+            <e p="NewPlayer.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="RoundModel.cs" t="Include" />
+          </e>
           <e p="framework" t="Include">
             <e p="BasePanel.cs" t="Include" />
             <e p="ByteArray.cs" t="Include" />
@@ -21,11 +43,33 @@
           </e>
           <e p="GameMain.cs" t="Include" />
           <e p="mudule" t="Include">
+            <e p="Chanllenge" t="Include">
+              <e p="CP1AI.cs" t="Include" />
+              <e p="CP1CardDeal.cs" t="Include" />
+              <e p="CP2AI.cs" t="Include" />
+              <e p="CP2CardDeal.cs" t="Include" />
+              <e p="CP3AI.cs" t="Include" />
+              <e p="CP3CardDeal.cs" t="Include" />
+              <e p="CP4AI.cs" t="Include" />
+              <e p="CP4CardDeal.cs" t="Include" />
+              <e p="MapPanel.cs" t="Include" />
+              <e p="Result1Panel.cs" t="Include" />
+              <e p="Result2Panel.cs" t="Include" />
+            </e>
             <e p="Common" t="Include">
-              <e p="SillyPanel.cs" t="Include" />
               <e p="TipPanel.cs" t="Include" />
             </e>
+            <e p="HomeAndShop" t="Include">
+              <e p="GameTypePanel.cs" t="Include" />
+              <e p="HomePanel.cs" t="Include" />
+            </e>
+            <e p="Load" t="Include">
+              <e p="Load1Panel.cs" t="Include" />
+              <e p="Load2Panel.cs" t="Include" />
+              <e p="Load3Panel.cs" t="Include" />
+            </e>
             <e p="Login" t="Include">
+              <e p="BeginPanel.cs" t="Include" />
               <e p="LoginPanel.cs" t="Include" />
               <e p="RegisterPanel.cs" t="Include" />
             </e>
@@ -33,16 +77,56 @@
               <e p="RoomListPanel.cs" t="Include" />
               <e p="RoomPanel.cs" t="Include" />
             </e>
+            <e p="Settlement" t="Include">
+              <e p="FishS1Panel.cs" t="Include" />
+              <e p="FishS2Panel.cs" t="Include" />
+              <e p="SettlementPanel1.cs" t="Include" />
+              <e p="SettlementPanel2.cs" t="Include" />
+              <e p="SettlementPanel3.cs" t="Include" />
+              <e p="SettlementPanel4.cs" t="Include" />
+            </e>
+          </e>
+          <e p="people" t="Include">
+            <e p="zhang.cs" t="Include" />
           </e>
           <e p="proto" t="Include">
             <e p="BattleMsg.cs" t="Include" />
+            <e p="CheckPointMsg.cs" t="Include" />
             <e p="LoginMsg.cs" t="Include" />
             <e p="NotepadMsg.cs" t="Include" />
             <e p="RoomMsg.cs" t="Include" />
             <e p="SysMsg.cs" t="Include" />
           </e>
+          <e p="server" t="Include">
+            <e p="cardData.cs" t="Include" />
+            <e p="clientCards.cs" t="Include" />
+            <e p="clientInit.cs" t="Include" />
+            <e p="Message.cs" t="Include" />
+            <e p="serverCreater.cs" t="Include" />
+          </e>
+          <e p="Transaction" t="Include">
+            <e p="Cardinit.cs" t="Include" />
+            <e p="fCardInit.cs" t="Include" />
+            <e p="Game2PlayCard.cs" t="Include" />
+            <e p="NewBehaviourScript.cs" t="Include" />
+            <e p="PlayCard.cs" t="Include" />
+            <e p="timeCounter.cs" t="Include" />
+          </e>
+          <e p="UIClass" t="Include">
+            <e p="CardUI.cs" t="Include" />
+            <e p="DeskUI.cs" t="Include" />
+            <e p="FishSound.cs" t="Include" />
+            <e p="Game2CardUI.cs" t="Include" />
+            <e p="Game2DeskUI.cs" t="Include" />
+            <e p="Game2PlayCardUI.cs" t="Include" />
+            <e p="LordUI.cs" t="Include" />
+            <e p="PlayCardUI.cs" t="Include" />
+            <e p="PlayCardUIF.cs" t="Include" />
+            <e p="PlayerUI.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+            <e p="SpecialEffect.cs" t="Include" />
+          </e>
         </e>
-        <e p="testJsonArray.cs" t="Include" />
       </e>
       <e p="Game.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

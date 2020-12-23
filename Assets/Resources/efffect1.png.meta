@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 0f267c6464bbb8b4bbe2e951ffd48997
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3951211963516469014
+    second: efffect1_0
+  - first:
+      213: -6378879696444527638
+    second: efffect1_0
+  - first:
+      213: -282385967681393827
+    second: efffect1_1
+  - first:
+      213: -8390085446018387188
+    second: efffect1_2
+  - first:
+      213: 8846671392542682538
+    second: efffect1_3
+  - first:
+      213: -3878981309712449046
+    second: efffect1_4
+  - first:
+      213: 6636385530277735002
+    second: efffect1_5
+  - first:
+      213: -2135576452656574786
+    second: efffect1_6
+  - first:
+      213: 3728683090146992196
+    second: efffect1_7
+  - first:
+      213: -6222041636325345129
+    second: efffect1_8
+  - first:
+      213: -4216589153452044143
+    second: efffect1_9
+  - first:
+      213: 403948463030426012
+    second: efffect1_10
+  - first:
+      213: 8152722765038565719
+    second: efffect1_11
+  - first:
+      213: 2826725751209426227
+    second: efffect1_12
+  - first:
+      213: 2174637176670725713
+    second: efffect1_13
+  - first:
+      213: 4243611481630482934
+    second: efffect1_14
+  - first:
+      213: 2945727895791638065
+    second: efffect1_15
+  - first:
+      213: -1013384111346688025
+    second: efffect1_16
+  - first:
+      213: -3672103599758718112
+    second: efffect1_17
+  - first:
+      213: 5812171751201908856
+    second: efffect1_18
+  - first:
+      213: -5427427835005564163
+    second: efffect1_19
+  - first:
+      213: -5232446245606696366
+    second: efffect1_20
+  - first:
+      213: -2927072929144289463
+    second: efffect1_21
+  - first:
+      213: 4361441410492668084
+    second: efffect1_22
+  - first:
+      213: -5867401440999753947
+    second: efffect1_23
+  - first:
+      213: 8831715368112230762
+    second: efffect1_24
+  - first:
+      213: -4262026166854123555
+    second: efffect1_25
+  - first:
+      213: -7681348683281107448
+    second: efffect1_26
+  - first:
+      213: -3888822354463849631
+    second: efffect1_27
+  - first:
+      213: 3375703683041366926
+    second: efffect1_28
+  - first:
+      213: 3261243901757159569
+    second: efffect1_29
+  - first:
+      213: -3032645794214996642
+    second: efffect1_30
+  - first:
+      213: 3790803776744840023
+    second: efffect1_31
+  - first:
+      213: -3681828103986173409
+    second: efffect1_32
+  - first:
+      213: 7224607303021562828
+    second: efffect1_33
+  - first:
+      213: 5746398073338586705
+    second: efffect1_34
+  - first:
+      213: -4877773161014155070
+    second: efffect1_35
+  - first:
+      213: 5355283788082403013
+    second: efffect1_36
+  - first:
+      213: -8589750274931760001
+    second: efffect1_37
+  - first:
+      213: -4138457549611488853
+    second: efffect1_38
+  - first:
+      213: -6872154292303938442
+    second: efffect1_39
+  - first:
+      213: -8558310002613056219
+    second: efffect1_40
+  - first:
+      213: -7289006083160697445
+    second: efffect1_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 799, y: 841, z: 120, w: 70}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: efffect1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 804
+        width: 360
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebe87c76baa977a0800000000000000
+      internalID: -6378879696444527638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 966
+        width: 150
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5babc26573c41cf0800000000000000
+      internalID: -282385967681393827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 962
+        width: 145
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0336ea4dbd609b80800000000000000
+      internalID: -8390085446018387188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 968
+        width: 147
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaded1582c0b5ca70800000000000000
+      internalID: 8846671392542682538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_4
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 985
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1c530fc071b2ac0800000000000000
+      internalID: -3878981309712449046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_5
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 995
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a2fbc8a7d291c50800000000000000
+      internalID: 6636385530277735002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_6
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 948
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe47b4f788ec52e0800000000000000
+      internalID: -2135576452656574786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_7
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 848
+        width: 109
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440a73cd381feb330800000000000000
+      internalID: 3728683090146992196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 845
+        width: 127
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7983329f81ed6a9a0800000000000000
+      internalID: -6222041636325345129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_9
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 841
+        width: 126
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190d9b0618aab75c0800000000000000
+      internalID: -4216589153452044143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 836
+        width: 118
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c995e76acfc1b9500800000000000000
+      internalID: 403948463030426012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 697
+        width: 110
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7593d5ae82a442170800000000000000
+      internalID: 8152722765038565719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_12
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 652
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d7946181c8a3720800000000000000
+      internalID: 2826725751209426227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 730
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15621de8dfcdd2e10800000000000000
+      internalID: 2174637176670725713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 738
+        width: 116
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1aa5fa82654ea30800000000000000
+      internalID: 4243611481630482934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_15
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 638
+        width: 195
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1369e910ae351e820800000000000000
+      internalID: 2945727895791638065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 697
+        width: 103
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efd726158cbfe1f0800000000000000
+      internalID: -1013384111346688025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_17
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 696
+        width: 81
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bc2fd4b311a0dc0800000000000000
+      internalID: -3672103599758718112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 170
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87823fbd96bf8a050800000000000000
+      internalID: 5812171751201908856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 639
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa0d6ac327eda4b0800000000000000
+      internalID: -5427427835005564163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_20
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 640
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a5940ccdd9267b0800000000000000
+      internalID: -5232446245606696366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_21
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 608
+        width: 193
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94741b2eda2f067d0800000000000000
+      internalID: -2927072929144289463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_22
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 506
+        width: 138
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8181ddad3f68c30800000000000000
+      internalID: 4361441410492668084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_23
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 506
+        width: 157
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527389ae97dc29ea0800000000000000
+      internalID: -5867401440999753947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_24
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 416
+        width: 157
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6110b9b55e809a70800000000000000
+      internalID: 8831715368112230762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_25
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 453
+        width: 178
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf7d3d48cd3ad4c0800000000000000
+      internalID: -4262026166854123555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_26
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 492
+        width: 146
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8067d11f11e566590800000000000000
+      internalID: -7681348683281107448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 269
+        width: 187
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16385972ca0280ac0800000000000000
+      internalID: -3888822354463849631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_28
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 275
+        width: 195
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8398ae4d98e8de20800000000000000
+      internalID: 3375703683041366926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_29
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 306
+        width: 214
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198f422cc04424d20800000000000000
+      internalID: 3261243901757159569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_30
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 345
+        width: 230
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e559b32c7b0e9e5d0800000000000000
+      internalID: -3032645794214996642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 252
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bd51e43f3ab9430800000000000000
+      internalID: 3790803776744840023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_32
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 179
+        width: 262
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aaad9b8d487ecc0800000000000000
+      internalID: -3681828103986173409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_33
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 218
+        width: 253
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb0b428016f24460800000000000000
+      internalID: 7224607303021562828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_34
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 215
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156e55b1a9e4fbf40800000000000000
+      internalID: 5746398073338586705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_35
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 212
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c821d2572bae4cb0800000000000000
+      internalID: -4877773161014155070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_36
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 212
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65f045b3ac15a40800000000000000
+      internalID: 5355283788082403013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 140
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74e069a2a31bc880800000000000000
+      internalID: -8589750274931760001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_38
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 134
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9af5df8ce3196c0800000000000000
+      internalID: -4138457549611488853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_39
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 136
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c3c85d41431a0a0800000000000000
+      internalID: -6872154292303938442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_40
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 129
+        width: 270
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d83908566ca3980800000000000000
+      internalID: -8558310002613056219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efffect1_41
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 134
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b959b8f069f38da90800000000000000
+      internalID: -7289006083160697445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

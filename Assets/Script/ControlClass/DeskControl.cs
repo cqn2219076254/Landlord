@@ -59,24 +59,5 @@ public class DeskControl:MonoBehaviour
         //这个方法访问round中的current Player,更改他的牌信息
         //更改round中其它current信息
     }
-
-    //if (e.CharacterType == CharacterType.Player)
-    //    {
-    //        if (e.CardType == RoundModel.CurrentType && e.Length == RoundModel.CurrentLength&&
-    //            e.Weight > RoundModel.CurrentWeight)
-    //            dispatcher.Dispatch(ViewEvent.SuccessedPlay);
-    //        else if (e.CardType == CardType.Boom && RoundModel.CurrentType != CardType.Boom)
-    //            dispatcher.Dispatch(ViewEvent.SuccessedPlay);
-    //        else if (e.CardType == CardType.JokerBoom)
-    //            dispatcher.Dispatch(ViewEvent.SuccessedPlay);
-    //        else if (e.CharacterType == RoundModel.BiggestCharacter)
-    //            dispatcher.Dispatch(ViewEvent.SuccessedPlay);
-    //        else
-    //        {
-    //            UnityEngine.Debug.Log("重新选择");
-    //            return;
-    //        }
-
-    //    }
+    
 }
-
